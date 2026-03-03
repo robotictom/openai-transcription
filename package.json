@@ -1,0 +1,30 @@
+{
+  "name": "openai-transcription",
+  "version": "1.0.0",
+  "description": "CLI for preparing media and running OpenAI diarized transcription",
+  "type": "module",
+  "bin": {
+    "openai-transcription": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "commander": "^14.0.1",
+    "dotenv": "^17.2.2",
+    "execa": "^9.6.0",
+    "openai": "^6.6.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

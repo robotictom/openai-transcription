@@ -1,0 +1,17 @@
+{
+  "text": "Hello everyone. Thanks for joining.",
+  "segments": [
+    {
+      "speaker": "speaker_0",
+      "start": 0.12,
+      "end": 1.45,
+      "text": "Hello everyone."
+    },
+    {
+      "speaker": "speaker_1",
+      "start": "1.46",
+      "end": "3.1",
+      "text": "Thanks for joining."
+    }
+  ]
+}
