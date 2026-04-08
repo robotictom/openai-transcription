@@ -21,9 +21,9 @@ Primary use case: transcribe public meetings with speaker diarization (speaker l
 
 ## Key API facts (source of truth)
 
-- Use the Audio API `audio/transcriptions` endpoint for speech-to-text. :contentReference[oaicite:0]{index=0}
-- Use model `gpt-4o-transcribe-diarize` for speaker labels + timestamps (non-latency-sensitive workloads). :contentReference[oaicite:1]{index=1}
-- To receive speaker annotations, request `response_format: "diarized_json"`. :contentReference[oaicite:2]{index=2}
+- Use the Audio API `audio/transcriptions` endpoint for speech-to-text.
+- Use model `gpt-4o-transcribe-diarize` for speaker labels + timestamps (non-latency-sensitive workloads).
+- To receive speaker annotations, request `response_format: "diarized_json"`.
 
 ## CLI Requirements
 
@@ -92,7 +92,7 @@ Normalization (if `--normalize`):
 
 - POST to `audio/transcriptions`
 - Send `file`, `model`, and `response_format`.
-- For diarization, require `response_format="diarized_json"` and model `gpt-4o-transcribe-diarize`. :contentReference[oaicite:3]{index=3}
+- For diarization, require `response_format="diarized_json"` and model `gpt-4o-transcribe-diarize`.
 
 ### 4) Save outputs
 
@@ -107,7 +107,7 @@ In `--out-dir`, write:
 
 Segment normalization:
 
-- Use the diarized response’s segments list (speaker + timestamps) as the source of truth. :contentReference[oaicite:4]{index=4}
+- Use the diarized response’s segments list (speaker + timestamps) as the source of truth.
 - Provide a stable internal schema:
     ```json
     {
