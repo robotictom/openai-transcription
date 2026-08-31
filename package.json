@@ -2,6 +2,7 @@
   "name": "openai-transcription",
   "version": "1.0.0",
   "description": "CLI for preparing media and running OpenAI diarized transcription",
+  "license": "MIT",
   "type": "module",
   "bin": {
     "openai-transcription": "dist/cli.js"

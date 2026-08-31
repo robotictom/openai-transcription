@@ -93,3 +93,7 @@ In `--out-dir` the CLI writes:
 ## Notes on diarization
 
 When using `model=gpt-4o-transcribe-diarize` with `response_format=diarized_json`, speaker labels and segment timestamps come directly from the model response segments.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
